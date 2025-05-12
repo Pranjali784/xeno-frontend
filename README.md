@@ -32,7 +32,7 @@ View campaign history <br>
 
 
 Architectural diagram <br>
-https://github.com/user-attachments/assets/43441508-e979-4582-9cdb-ca1332c8b52f
+https://drive.google.com/file/d/1TaPF4RYWFSIcKEMOc3iJzClti6_LMvJc/view?usp=sharing
 <br>
 
 Tech Stack:<br>

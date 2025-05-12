@@ -29,3 +29,23 @@ Create campaigns <br>
 Add audience rules & groups <br>
 Preview audience size <br>
 View campaign history <br>
+
+
+Architectural diagram <br>
+https://github.com/user-attachments/assets/43441508-e979-4582-9cdb-ca1332c8b52f
+<br>
+
+Tech Stack:<br>
+
+Frontend: React.js for building the web UI.<br>
+Backend: Java (Spring Boot) for building the backend REST APIs.<br>
+Database: MySQL for storing data such as customer profiles, orders, campaigns, and communication logs.<br>
+
+Known Limitations or Assumptions:<br>
+
+Scalability: Handling large volumes of data might require optimization.<br>
+Message Delivery Simulation: Success/failure rates are simulated and may not reflect real-world conditions.<br>
+AI Quality: AI-generated suggestions depend on model capabilities and data quality.<br>
+Complex UX/UI: Advanced features like drag-and-drop might require additional time or libraries.<br>
+Real-Time Data Processing: Managing real-time updates in large-scale systems could be challenging.<br>
+

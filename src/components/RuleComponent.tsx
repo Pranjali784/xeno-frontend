@@ -50,13 +50,11 @@ const RuleComponent: React.FC<RuleProps> = ({ rule, onChange, onRemove }) => {
   };
 
   const handleValueChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
-    const inputType = FIELD_CONFIG[rule.field]?.inputType;
-    let newValue = e.target.value;
-    if (inputType === 'number') {
-      newValue = e.target.value === '' ? '' : parseFloat(e.target.value);
-    }
-    onChange({ ...rule, value: newValue });
-  };
+  const newValue = e.target.value;
+  onChange({ ...rule, value: newValue });
+};
+
+
 
   const currentFieldConfig = FIELD_CONFIG[rule.field];
 

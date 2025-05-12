@@ -1,0 +1,108 @@
+.campaign-creation-page {
+  /* max-width: 900px; */
+  margin: 20px; /* Changed from 20px auto */
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-creation-page h1 {
+  color: #2c3e50; /* Dark blue-grey */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+.campaign-name-section {
+  margin-bottom: 25px;
+  padding: 20px;
+  background-color: #f8f9fa; /* Light grey background */
+  border-radius: 6px;
+  border: 1px solid #e9ecef; /* Light border */
+}
+
+.campaign-name-section label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #495057; /* Medium grey */
+  font-size: 1.1em;
+}
+
+.campaign-name-section input[type="text"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ced4da; /* Standard input border */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.campaign-name-section input[type="text"]:focus {
+  border-color: #007bff; /* Blue focus color */
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  outline: none;
+}
+
+.audience-preview-section {
+  margin-top: 25px;
+  padding: 20px;
+  background-color: #e9f7fd; /* Light blue background */
+  border: 1px solid #bce8f1; /* Lighter blue border */
+  border-radius: 6px;
+  text-align: center;
+}
+
+.audience-preview-section h2 {
+  color: #0056b3; /* Darker blue for heading */
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.audience-preview-section p {
+  font-size: 1.1em;
+  color: #31708f; /* Medium blue text */
+}
+
+.audience-preview-section strong {
+  font-size: 1.3em;
+  color: #004085; /* Stronger blue for emphasis */
+}
+
+.save-segment-button {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  background-color: #28a745; /* Green for save/confirm */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.2em;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 30px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.save-segment-button:hover {
+  background-color: #218838; /* Darker green on hover */
+}
+
+/* Responsive adjustments if needed */
+@media (max-width: 768px) {
+  .campaign-creation-page {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  .campaign-name-section input[type="text"] {
+    font-size: 0.95em;
+  }
+
+  .save-segment-button {
+    font-size: 1.1em;
+  }
+}

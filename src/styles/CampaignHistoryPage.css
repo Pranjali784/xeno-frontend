@@ -1,0 +1,125 @@
+.campaign-history-page {
+  /* max-width: 1000px; */
+  margin: 20px; /* Changed from 20px auto */
+  padding: 25px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-history-page h1 {
+  color: #2c3e50; /* Dark blue-grey */
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2em;
+}
+
+.no-campaigns-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  padding: 30px;
+}
+
+.campaign-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.campaign-table th,
+.campaign-table td {
+  border: 1px solid #e0e0e0;
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.campaign-table th {
+  background-color: #f0f2f5; /* Light grey header */
+  color: #333;
+  font-weight: bold;
+  font-size: 0.95em;
+  text-transform: uppercase;
+}
+
+.campaign-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9; /* Zebra striping for rows */
+}
+
+.campaign-table tbody tr:hover {
+  background-color: #e9ecef; /* Hover effect for rows */
+}
+
+.status-badge {
+  padding: 5px 10px;
+  border-radius: 12px; /* Pill shape */
+  font-size: 0.85em;
+  font-weight: bold;
+  color: white;
+  text-transform: capitalize;
+  min-width: 70px; /* Ensure consistent width */
+  display: inline-block;
+  text-align: center;
+}
+
+.status-sent {
+  background-color: #28a745; /* Green */
+}
+
+.status-draft {
+  background-color: #ffc107; /* Yellow */
+  color: #333; /* Darker text for yellow */
+}
+
+.status-failed {
+  background-color: #dc3545; /* Red */
+}
+
+.status-sending {
+  background-color: #17a2b8; /* Teal/Info Blue */
+}
+
+/* For responsive tables, if you want to stack cells on small screens */
+@media (max-width: 768px) {
+  .campaign-table thead {
+    display: none; /* Hide table headers */
+  }
+  .campaign-table,
+  .campaign-table tbody,
+  .campaign-table tr,
+  .campaign-table td {
+    display: block;
+    width: 100%;
+  }
+  .campaign-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  .campaign-table td {
+    text-align: right;
+    padding-left: 50%; /* Create space for the data label */
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #eee;
+  }
+  .campaign-table td::before {
+    content: attr(data-label);
+    position: absolute;
+    left: 10px;
+    width: calc(50% - 20px); /* Adjust based on padding */
+    padding-right: 10px;
+    font-weight: bold;
+    text-align: left;
+    white-space: nowrap;
+  }
+  .campaign-table td:last-child {
+    border-bottom: 0;
+  }
+  .status-badge {
+    float: right;
+  }
+}

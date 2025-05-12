@@ -1,0 +1,143 @@
+.rule-builder {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.rule-builder h3 {
+  margin-top: 0;
+  color: #333;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.rule-group {
+  background-color: #f9f9f9;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 15px;
+  margin-top: 10px;
+  margin-left: 20px; /* Indent nested groups */
+}
+
+.rule-group:first-child {
+  margin-left: 0;
+}
+
+.group-controls {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.group-controls select,
+.group-controls button {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.group-controls button {
+  background-color: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.group-controls button:hover {
+  background-color: #0056b3;
+}
+
+.rules-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.rule-item-container {
+  /* Styles for the container of a rule or a sub-group if needed */
+}
+
+.rule-component {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.rule-component select,
+.rule-component input {
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 0.9em;
+  flex-grow: 1;
+}
+
+.rule-component select {
+  min-width: 150px; /* Adjust as needed */
+  flex-grow: 0;
+}
+
+.rule-component input[type="number"] {
+  width: 80px; /* Adjust as needed */
+  flex-grow: 0;
+}
+
+.remove-rule-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+.remove-rule-btn:hover {
+  background-color: #c82333;
+}
+
+/* Styling for the main App navigation (optional, can be in App.css) */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  background-color: #004085; /* Darker blue for nav */
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  background-color: #003065; /* Slightly darker on hover */
+}
+
+/* Clear floats after the columns */
+nav ul:after {
+  content: "";
+  display: table;
+  clear: both;
+}

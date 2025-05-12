@@ -25,7 +25,7 @@ App runs at http://localhost:5173
 
 Features:
 
-Create campaigns
-Add audience rules & groups
-Preview audience size
-View campaign history
+Create campaigns <br>
+Add audience rules & groups <br>
+Preview audience size <br>
+View campaign history <br>
